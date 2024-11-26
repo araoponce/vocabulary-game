@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulario: Partes del Cuerpo, Ropa y Colores</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding-bottom: 40px; /* Para darle espacio al pie de página */
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Asegura que la página ocupe toda la altura de la ventana */
+        }
+        h1 {
+            font-size: 32px;
+            color: #333:
+            text-align: center;
+        } 
+        .translation {
+            font-size: 30px; 
+            color: #444;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .vocabulary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .vocabulary-category {
+            flex-basis: 30%;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .vocabulary-category h3 {
+            text-align: center;
+            color: #333;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: 180px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .translation {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .drop-area {
+            background-color: #edeeea;
+            border: 2px dashed #bcbeba;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            height: 200px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .drop-area.error {
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+        .image-container {
+            display: flex;
+            gap: 20px;
+        }
+        .draggable-image {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .feedback {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .feedback.correct {
+            color: green;
+            font-weight: bold;
+        }
+
+        .feedback.incorrect {
+            color: red;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center; /* Centra el texto */
+            font-size: 12px;     /* Hace el texto más pequeño */
+            color: #666;         /* Color gris */
+            padding: 10px 0;     /* Espacio arriba y abajo */
+            background-color: #f8f8f8; /* Fondo gris claro */
+            margin-top: auto; /* Empuja el pie de página hacia abajo */
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0; /* Elimina márgenes alrededor del párrafo */
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprende vocabulario: Partes del cuerpo, Ropa, Colores</h1>
+    <p class="translation">Learn vocabulary: Parts of the body, Clothes, Colors</p>
+    <h2>Vocabulario: Partes del Cuerpo</h2>
+    <p class="translation">Vocabulary: Parts of the body</p>
+
+
+    <!-- Vocabulario: Español/Inglés -->
+    <div class="vocabulary">
+        <div class="card">
+            <p class="spanish">Cabeza</p>
+            <p class="english">Head</p>
+        </div>
+        <div class="card">
+            <p class="spanish">Mano</p>
+            <p class="english">Hand</p>
+        </div>
+        <div class="card">
+            <p class="spanish">Pierna</p>
+            <p class="english">Leg</p>
+        </div>
+    </div>
+    
+    <!-- Espacio visible entre categorías -->
+    <div style="height: 30px;"></div>
+    <h2>Vocabulario: Ropa</h2>
+    <p class="translation">Vocabulary: Clothes</p>
+    <div class="vocabulary">
+        <div class="card">
+            <p class="spanish">Camiseta</p>
+            <p class="english">Shirt</p>
+        </div>
+        <div class="card">
+            <p class="spanish">Pantalones</p>
+            <p class="english">Pants</p>
+        </div>
+        <div class="card">
+            <p class="spanish">Zapatos</p>
+            <p class="english">Shoes</p>
+        </div>
+    </div>
+
+    <!-- Espacio visible entre categorías -->
+    <div style="height: 30px;"></div>
+    <h2>Vocabulario: Colores</h2>
+    <p class="translation">Vocabulary: Colors</p>
+    <div class="vocabulary">
+        <div class="card">
+            <p class="spanish">Rojo</p>
+            <p class="english">Red</p>
+        </div>
+        <div class="card">
+            <p class="spanish">Azul</p>
+            <p class="english">Blue</p>
+        </div>
+        <div class="card">
+            <p class="spanish">Verde</p>
+            <p class="english">Green</p>
+        </div>
+    </div>
+
+    <!-- Sección de Juego: Cuerpo -->
+    <div class="section">
+        <h2>Juego: Empareja la Imagen con la Palabra - Partes del Cuerpo</h2>
+        <div class="vocabulary">
+            <h3>Partes del Cuerpo: Empareja la imagen de la "Cabeza"</h3>
+            <div class="image-container">
+                <img class="draggable-image" src="http://www.tummytub.co.uk/wp-content/uploads/2019/07/head-1024x700.jpg" alt="Head" id="image-head1" draggable="true" ondragstart="drag(event)">
+                <img class="draggable-image" src="https://img.freepik.com/free-photo/hand-man-counting-five_1368-8436.jpg?t=st=1731855014~exp=1731858614~hmac=3cd4b0f9cc30f54b4739c5cd9912c211aa0490c81f7be2ccaebdb91b77bd05c3&w=740" alt="Hand" id="image-head2" draggable="true" ondragstart="drag(event)">
+                <img class="draggable-image" src="https://i.pinimg.com/736x/68/7d/30/687d30dccea8c3f51f85ea0093dd90ea.jpg" alt="Leg" id="image-head3" draggable="true" ondragstart="drag(event)">
+            </div>
+            <div class="drop-area" id="drop-head" ondrop="drop(event, 'head')" ondragover="allowDrop(event)">
+                <p>Deja la imagen de la "Cabeza" aquí</p>
+            </div>
+            <div id="feedback-head" class="feedback"></div>
+        </div>
+    </div>
+
+    <!-- Sección de Juego: Ropa -->
+    <div class="section">
+        <h2>Juego: Empareja la Imagen con la Palabra - Ropa</h2>
+        <div class="vocabulary">
+            <h3>Ropa: Empareja la imagen de la "Camiseta"</h3>
+            <div class="image-container">
+                <img class="draggable-image" src="https://media.istockphoto.com/id/1267481579/pl/wektor/hawajska-koszula-z-kwiatami-hibiskusa-izolowana-ilustracja-wektorowa.jpg?s=1024x1024&w=is&k=20&c=BuGVhZIPLX-5REaua0UfroB-bC0eLbhNW44ShHKVRls=" alt="Shirt" id="image-shirt1" draggable="true" ondragstart="drag(event)">
+                <img class="draggable-image" src="https://easydrawingguides.com/wp-content/uploads/2019/03/how-to-draw-a-jeans-featured-image-1200.png" alt="Pants" id="image-shirt2" draggable="true" ondragstart="drag(event)">
+                <img class="draggable-image" src="https://howtodrawforkids.com/wp-content/uploads/2022/11/9-shoes-from-the-front-drawing-cartoon.jpg" alt="Shoes" id="image-shirt3" draggable="true" ondragstart="drag(event)">
+            </div>
+            <div class="drop-area" id="drop-shirt" ondrop="drop(event, 'shirt')" ondragover="allowDrop(event)">
+                <p>Deja la imagen de la "Camiseta" aquí</p>
+            </div>
+            <div id="feedback-shirt" class="feedback"></div>
+        </div>
+    </div>
+
+    <!-- Sección de Juego: Colores -->
+    <div class="section">
+        <h2>Juego: Empareja la Imagen con la Palabra - Colores</h2>
+        <div class="vocabulary">
+            <h3>Colores: Empareja la imagen del color "Rojo"</h3>
+            <div class="image-container">
+                <div class="draggable-image" style="background-color: red; width: 100px; height: 100px;" id="image-red1" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="draggable-image" style="background-color: blue; width: 100px; height: 100px;" id="image-blue1" draggable="true" ondragstart="drag(event)">
+                </div>
+                <div class="draggable-image" style="background-color: green; width: 100px; height: 100px;" id="image-green1" draggable="true" ondragstart="drag(event)">
+                </div>
+            </div>
+            <div class="drop-area" id="drop-red" ondrop="drop(event, 'red')" ondragover="allowDrop(event)">
+                <p>Deja la imagen de "Rojo" aquí</p>
+            </div>
+            <div id="feedback-red" class="feedback"></div>
+        </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev, category) {
+            ev.preventDefault();
+            const data = ev.dataTransfer.getData("text");
+            const draggedElement = document.getElementById(data);
+            const dropArea = ev.target;
+
+            // Verifica si la imagen arrastrada es la correcta
+            if (
+                (category === "head" && draggedElement.alt === "Head") ||
+                (category === "shirt" && draggedElement.alt === "Shirt") ||
+                (category === "red" && draggedElement.style.backgroundColor === "red")
+            ) {
+                dropArea.classList.remove("error");
+                document.getElementById(`feedback-${category}`).textContent = "¡Correcto!";
+                document.getElementById(`feedback-${category}`).classList.add("correct");
+            } else {
+                dropArea.classList.add("error");
+                document.getElementById(`feedback-${category}`).textContent = "¡Inténtalo de nuevo!";
+                document.getElementById(`feedback-${category}`).classList.add("incorrect");
+            }
+        }
+    </script>
+</body>
+</html>
